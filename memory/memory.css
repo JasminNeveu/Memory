@@ -1,29 +1,133 @@
-img {
-    border: solid;
-    border-color: white;
+*{
+  padding: 0;
+  margin: 0;
+  font-family: Open Sans;
+  background-color: #BDD9D7;
+  font-family: PT serif;
+}
+body{
+  height: 100vh;
+  
+  position: relative;
+  z-index: -2;
 }
 
-/* Style the "Add" button */
-.addBtn {
-  padding: 10px;
-  width: 12.5%;
-  background: #d9d9d9;
-  color: #555;
-  /* float: left; */
-  text-align: center;
-  font-size: 16px;
+
+
+header{
+  padding: 20px 0;
+}
+header h1{
+  font-size: 68px;
+}
+
+.header-info{
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 36px;
+}
+
+
+.grille{
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(7, 140px);
+  justify-content: center;
+  grid-gap: 90px;
+  background-color: transparent;
+}
+
+.grille-item img{
+  width: 140px;
+  border: none;
+  border-radius: 5px;
+  transition: .3s
+}
+
+.grille-item img:hover{
+  transform: scale(1.1);
+  background: #BDD9D7;
+  box-shadow:  20px 20px 60px #a1b8b7,
+              -20px -20px 60px #d9faf7;
   cursor: pointer;
-  transition: 0.3s;
-  border-radius: 0;
+  
 }
 
-.addBtn:hover {
-  background-color: #bbb;
+
+.ellispe{
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  width: 800px;
+  z-index: -1;
+  background-color:transparent ;
 }
 
-.footer {
-    clear: both;
-    margin-top: 12px;
-    color: grey;
-    text-align:right;
+.leftshape{
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  width: 1600px;
+  z-index: -100;
+  background-color:transparent ;
+}
+
+.option-selection{
+
+  display: flex;
+  justify-content: space-between;
+  background-color: transparent;
+  z-index: 500;
+  margin: 30px 80px;
+
+}
+
+.box-left{
+  display: flex;
+  flex-direction: column;
+  color: #F3F0EE;
+  font-size: 32px;
+  background-color: transparent;
+
+}
+
+.box-left h3{
+  background-color: transparent;
+
+}
+
+.box-left input, .box-left label{
+  background-color: transparent;
+  margin: 1px 0;
+}
+
+.box-left .btn{
+  display: block;
+  border: none;
+  width: 200px;
+  height: 70px;
+  color: #F3F0EE;
+  font-size: 20px;
+  border-radius: 5px;
+  border: solid 1px  #F3F0EE;
+  transition: .5s;
+}
+
+.box-left .btn:hover{
+  background-color: #15383b;
+  cursor: pointer;
+  background: #0f2f31;
+  box-shadow:  15px 15px 48px #0d2a2d,
+              -15px -15px 48px #21686d;
+}
+
+.box-right{
+  background-color: transparent;
+  
+}
+
+.box-right p{
+  background-color: transparent;
+  font-size: 32px;
+  margin: 30px 30px 30px 0;  
 }
