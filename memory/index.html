@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="Author" content="jlajus">
+  <title>Memory game</title>
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+</head>
+<body onload='init()'> 
+  
+  
+  <header>
+    <h1 style="text-align: center" id='ui'>Jeu du Memory</h1>
+
+    <div class='header-info'>
+      <h2 id='score_1'> Score joueuer 1: <span ></span></h2>
+      
+      <h2 id="coups" >Coups : <span id="nombre_coups"></span></h2>
+      <h2 id="temps" ><span id="nombre_temps"></span></h2>
+
+      <h2 id='score_2'> Score joueuer 2: <span ></span></h2>
+      
+      
+    </div>
+  </header>
+
+
+
+  
+
+  <section class='grille'>
+    
+    <div class='grille-item'><img id ="img" class="available" src="/images/placeholder.jpg" /></div>
+    <div class='grille-item'><img id ="img" class="available" src="/images/placeholder.jpg" /></div>
+    <div class='grille-item'><img id ="img"class="available" src="/images/placeholder.jpg" /></div>
+    <div class='grille-item'><img id ="img"class="available" src="/images/placeholder.jpg" /></div>
+    <div class='grille-item'><img id ="img" class="available" src="/images/placeholder.jpg"/></div>
+    <div class='grille-item'><img id ="img" class="available" src="/images/placeholder.jpg" /></div>
+    <div class='grille-item'><img id ="img"class="available" src="/images/placeholder.jpg" /></div>
+  
+  
+    <div class='grille-item'><img id ="img" class="available" src="/images/placeholder.jpg" /></div>
+    <div class='grille-item'><img id ="img" class="available" src="/images/placeholder.jpg" /></div>
+    <div class='grille-item'><img id ="img"class="available" src="/images/placeholder.jpg" /></div>
+    <div class='grille-item'><img id ="img" class="available" src="/images/placeholder.jpg" /></div>
+    <div class='grille-item'><img id ="img"class="available" src="/images/placeholder.jpg" /></div>
+    <div class='grille-item'><img id ="img"class="available" src="/images/placeholder.jpg" /></div>
+    <div class='grille-item'><img id ="img"class="available" src="/images/placeholder.jpg"/></div>
+  
+  
+    <div class='grille-item'><img id ="img"class="available" src="/images/placeholder.jpg" /></div>
+    <div class='grille-item'><img id ="img"class="available" src="/images/placeholder.jpg" /></div>
+    <div class='grille-item'><img id ="img"class="available" src="/images/placeholder.jpg" /></div>
+    <div class='grille-item'><img id ="img"class="available" src="/images/placeholder.jpg" /></div>
+    <div class='grille-item'><img id ="img"class="available" src="/images/placeholder.jpg" /></div>
+    <div class='grille-item'><img id ="img"class="available" src="/images/placeholder.jpg" /></div>
+    <div class='grille-item'><img id ="card_trump"class="available hide" src="/images/placeholder.jpg" /></div>
+  
+  </section>
+
+  <section class='option-selection'>
+
+    <div class='box-left'>
+        <h3>Options:</h3>
+
+      <div>
+        <div class="option-item">
+          <label for="trump" >Trump card</label >
+          <input type="checkbox" id="check_trump" name="trump" onclick='init() '>
+        </div>
+
+
+        
+        <div class="option-item">
+          <label for="twoplayer" >Deux joueurs </label>
+          <input type="checkbox" id="check_twoplayer" name="twoplayer" onclick='init()'>
+        </div>
+      </div>
+        
+        
+      <div>
+        <div class="option-item">
+          <label for="blitz" id='label_blitz'>Blitz</label>
+          <input type="checkbox" id="check_blitz" name="blitz" onclick='init()'>
+        </div>
+        
+        <div div class="option-item">
+          <label for="blitz1m10" id='label_blitz1m10'>Blitz 1m + 10s</label>
+          <input type="checkbox" id="check_blitz1m10" name="blitz1m10" onclick='init()'>
+        </div>
+      </div>
+       
+
+        
+
+        <input type='button' value='Rejouer'class='btn' onclick='init()'>
+    </div>
+
+    <div class='box-right'>
+      <p>Jasmin Neveu</p>
+      <p>Pictures courtesy of NASA/JPL-Caltech</p>
+    </div>
+ 
+  </section>
+
+</body>
+</html>
